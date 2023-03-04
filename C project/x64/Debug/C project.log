@@ -1,0 +1,8 @@
+﻿  main.c
+D:\Download\Studies\C\projects\C project\C project\cards.h(36,13): warning C4133: '=': incompatible types - from 'int *' to 'deck *'
+D:\Download\Studies\C\projects\C project\C project\cards.h(58,11): warning C4133: '=': incompatible types - from 'int *' to 'deck *'
+D:\Download\Studies\C\projects\C project\C project\cards.h(74,9): warning C4133: '=': incompatible types - from 'int *' to 'deck *'
+D:\Download\Studies\C\projects\C project\C project\cards.h(66,15): warning C4133: 'initializing': incompatible types - from 'int *' to 'deck *'
+D:\Download\Studies\C\projects\C project\C project\game.h(19,35): error C2440: '=': cannot convert from 'FILE *' to 'FILE'
+D:\Download\Studies\C\projects\C project\C project\main.c(17,23): warning C4047: 'function': 'FILE *' differs in levels of indirection from 'FILE **'
+D:\Download\Studies\C\projects\C project\C project\main.c(17,18): warning C4024: 'load_save': different types for formal and actual parameter 1
