@@ -1,8 +1,25 @@
 ﻿  main.c
-D:\Download\Studies\C\projects\C project\C project\cards.h(36,13): warning C4133: '=': incompatible types - from 'int *' to 'deck *'
-D:\Download\Studies\C\projects\C project\C project\cards.h(58,11): warning C4133: '=': incompatible types - from 'int *' to 'deck *'
-D:\Download\Studies\C\projects\C project\C project\cards.h(74,9): warning C4133: '=': incompatible types - from 'int *' to 'deck *'
-D:\Download\Studies\C\projects\C project\C project\cards.h(66,15): warning C4133: 'initializing': incompatible types - from 'int *' to 'deck *'
-D:\Download\Studies\C\projects\C project\C project\game.h(19,35): error C2440: '=': cannot convert from 'FILE *' to 'FILE'
-D:\Download\Studies\C\projects\C project\C project\main.c(17,23): warning C4047: 'function': 'FILE *' differs in levels of indirection from 'FILE **'
-D:\Download\Studies\C\projects\C project\C project\main.c(17,18): warning C4024: 'load_save': different types for formal and actual parameter 1
+D:\Download\Studies\C\projects\C project\C project\cards.h(18,39): warning C4028: formal parameter 2 different from declaration
+D:\Download\Studies\C\projects\C project\C project\cards.h(127,31): warning C4028: formal parameter 1 different from declaration
+D:\Download\Studies\C\projects\C project\C project\cards.h(136,4): warning C4033: 'print_card' must return a value
+D:\Download\Studies\C\projects\C project\C project\cards.h(130,15): warning C4047: 'initializing': 'deck *' differs in levels of indirection from 'deck ***'
+D:\Download\Studies\C\projects\C project\C project\game.h(20,14): warning C4028: formal parameter 1 different from declaration
+D:\Download\Studies\C\projects\C project\C project\game.h(20,25): warning C4028: formal parameter 2 different from declaration
+D:\Download\Studies\C\projects\C project\C project\game.h(32,5): warning C4033: 'betting' must return a value
+D:\Download\Studies\C\projects\C project\C project\game.h(50,18): warning C4047: 'function': 'deck ***' differs in levels of indirection from 'deck *'
+D:\Download\Studies\C\projects\C project\C project\game.h(50,14): warning C4024: 'print_card': different types for formal and actual parameter 1
+D:\Download\Studies\C\projects\C project\C project\main.c(17,8): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+D:\Download\Studies\C\projects\C project\C project\main.c(21,23): warning C4133: 'function': incompatible types - from 'char *' to 'int *'
+D:\Download\Studies\C\projects\C project\C project\main.c(27,40): warning C4133: 'function': incompatible types - from 'char *' to 'int *'
+D:\Download\Studies\C\projects\C project\C project\main.c(27,51): warning C4133: 'function': incompatible types - from 'char *' to 'int *'
+D:\Download\Studies\C\projects\C project\C project\main.c(28,40): warning C4133: 'function': incompatible types - from 'char *' to 'int *'
+D:\Download\Studies\C\projects\C project\C project\main.c(28,51): warning C4133: 'function': incompatible types - from 'char *' to 'int *'
+D:\Download\Studies\C\projects\C project\C project\cards.h(66): warning C4716: 'print_deck_binary': must return a value
+D:\Download\Studies\C\projects\C project\C project\cards.h(86): warning C4716: 'free_deck': must return a value
+D:\Download\Studies\C\projects\C project\C project\cards.h(125): warning C4716: 'draw_cards': must return a value
+D:\Download\Studies\C\projects\C project\C project\cards.h(178): warning C4716: 'print_card': must return a value
+D:\Download\Studies\C\projects\C project\C project\game.h(42): warning C4716: 'betting': must return a value
+D:\Download\Studies\C\projects\C project\C project\game.h(55): warning C4716: 'print_hand': must return a value
+D:\Download\Studies\C\projects\C project\C project\game.h(63): warning C4716: 'print_player': must return a value
+D:\Download\Studies\C\projects\C project\C project\cards.h(46): warning C4716: 'init_deck': must return a value
+  C project.vcxproj -> D:\Download\Studies\C\projects\C project\x64\Debug\C project.exe
