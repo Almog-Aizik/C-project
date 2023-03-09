@@ -69,6 +69,17 @@ int print_player(struct deck *dealer, struct deck *player, char dealer_len, char
 	return;
 }
 
+int print_dealer(struct deck* dealer, struct deck* player, char dealer_len, char player_len)
+{
+	printf("Dealer: ");
+	print_hand(dealer, dealer_len, ALLOW_LAST);
+	printf("Player: ");
+	print_hand(player, player_len, ALLOW_LAST);
+	printf("\n");
+
+	return;
+}
+
 //handles the player's turn
 int player_round(struct deck** player_hand, struct deck* dealer_hand, struct deck** deck_hand, char* player_len, char dealer_len, int* deck_len, int* cash,int* pot)
 {
@@ -119,7 +130,7 @@ int dealer_round(struct deck* player_hand, struct deck** dealer_hand, struct dec
 	while (1)
 	{
 		invalid;
-		print_player(*dealer_hand, player_hand, *dealer_len, player_len);
+		print_dealer(*dealer_hand, player_hand, *dealer_len, player_len);
 		score = check_score(dealer_hand);
 		//check for black jack or bust
 		if (score > 21)
@@ -139,13 +150,13 @@ int dealer_round(struct deck* player_hand, struct deck** dealer_hand, struct dec
 		{
 			if (score < player_score)
 			{
-				printf("You Win!\n")
+				printf("You Win!\n");
 				*cash = *cash + *pot * 2;
 				*pot = 0;
 				return;
 			}
 			else if (score == player_score) {
-				printf("A draw!\n")
+				printf("A draw!\n");
 				*cash = *cash + *pot;
 				*pot = 0;
 				return;
