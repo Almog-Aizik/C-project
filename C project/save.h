@@ -14,7 +14,6 @@ int load_save()
 	while (1)
 	{
 		char user_input = { 0 }; // zero out the input to prevent infinite loop
-		fflush(stdin);
 		scanf("%c", &user_input);
 		if (user_input == 'Y' || user_input == 'y')
 		{
