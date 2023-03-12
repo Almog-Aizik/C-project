@@ -93,7 +93,7 @@ int free_deck(struct deck** head)
 }
 
 //draw cards x amount of random cards from deck to hand
-int draw_cards(struct deck** deck, struct deck** hand, char* deck_len, char* hand_len, int times)
+int draw_cards(struct deck** deck, struct deck** hand, int* deck_len, int* hand_len, int times)
 {
 	//get variables to allow walking on the chained list
 	unsigned int rand_num;

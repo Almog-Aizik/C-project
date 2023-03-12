@@ -5,10 +5,11 @@
 
 
 int can_play(int cash);
-int betting(int cash, int pot);
-int print_hand(struct deck *hand, char len, char status);
+int betting(int* cash, int* pot);
+int print_hand(struct deck* hand, char len, char last);
 int print_player(struct deck* dealer, struct deck* player, char dealer_len, char player_len);
-int player_round(struct deck** player_hand, char* player_len, char* player_turn, char* cash, char* pot);
+int print_dealer(struct deck* dealer, struct deck* player, char dealer_len, char player_len);
+int player_round(struct deck** player_hand, struct deck* dealer_hand, struct deck** deck_hand, char* player_len, char dealer_len, int* deck_len, int* cash, int* pot);
 int dealer_round(struct deck* player_hand, struct deck** dealer_hand, struct deck** deck_hand, char player_len, char* dealer_len, int* deck_len, int* cash, int* pot, int player_score);
 
 int can_play(int cash)
@@ -26,7 +27,7 @@ betting(int *cash, int *pot)
 	printf("\n How much would you like to bet? (must be a multiple of 10)\n");
 	while (1)
 	{
-		scanf("%d", pot);
+		scanf(" %d", pot);
 		if (*pot % 10 == 0 || *pot >= 10)
 		{
 			if (*pot <= *cash)
@@ -108,7 +109,7 @@ int player_round(struct deck** player_hand, struct deck* dealer_hand, struct dec
 			printf("\nHit or Stand? (type H or S) ");
 			while (invalid)
 			{
-				scanf("%c", &user_input);
+				scanf(" %c", &user_input);
 				if (user_input == 'h' || user_input == 'H')
 				{
 					draw_cards(deck_hand, player_hand, deck_len, player_len, 1);

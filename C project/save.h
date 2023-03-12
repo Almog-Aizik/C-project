@@ -15,7 +15,7 @@ int load_save()
 	printf("Do you want to load the save? (Y/N) ");
 	while (1)
 	{
-		scanf("%c", &user_input);
+		scanf(" %c", &user_input);
 		if (user_input == 'Y' || user_input == 'y')
 		{
 			save = fopen("save.txt", "r");
@@ -43,7 +43,7 @@ int save_to_file(int data)
 	printf("Do you want to save the game? (Y/N) ");
 	while (1)
 	{
-		scanf("%c", &user_input);
+		scanf(" %c", &user_input);
 		if (user_input == 'Y' || user_input == 'y')
 		{
 			save = fopen("save.txt", "w");
